@@ -7,10 +7,10 @@
     /* THEME 1 KEYS */
     -desaturated-dark-blue : hsl(225, 21%, 49%);        /* key background */
     -desaturated-dark-blue-shadow : hsl(224, 28%, 35%); /* key shadow */
-    -key-red : hsl(6, 63%, 50%);       /* key background, toggle */
-    -shadow-red : hsl(6, 70%, 34%); /* key shadow */
-    -light-grayish-orange : hsl(30, 25%, 89%); /* key background */
-    -grayish-orange : hsl(28, 16%, 65%);       /* key shadow */
+    -key-red : hsl(6, 63%, 50%);                        /* key background, toggle */
+    -shadow-red : hsl(6, 70%, 34%);                     /* key shadow */
+    -light-grayish-orange : hsl(30, 25%, 89%);          /* key background */
+    -grayish-orange : hsl(28, 16%, 65%);                /* key shadow */
 
     /* THEME 1 TEXT */
     -very-dark-grayish-blue : hsl(221, 14%, 31%); 
