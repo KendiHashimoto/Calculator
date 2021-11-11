@@ -5,50 +5,50 @@
     --very-dark-desaturated-blue : hsl(224, 36%, 15%);   /* screen background */
 
     /* THEME 1 KEYS */
-    -desaturated-dark-blue : hsl(225, 21%, 49%);        /* key background */
-    -desaturated-dark-blue-shadow : hsl(224, 28%, 35%); /* key shadow */
-    -key-red : hsl(6, 63%, 50%);       /* key background, toggle */
-    -shadow-red : hsl(6, 70%, 34%); /* key shadow */
-    -light-grayish-orange : hsl(30, 25%, 89%); /* key background */
-    -grayish-orange : hsl(28, 16%, 65%);       /* key shadow */
+    --desaturated-dark-blue : hsl(225, 21%, 49%);        /* key background */
+    --desaturated-dark-blue-shadow : hsl(224, 28%, 35%); /* key shadow */
+    --key-red : hsl(6, 63%, 50%);       /* key background, toggle */
+    --hadow-red : hsl(6, 70%, 34%); /* key shadow */
+    --light-grayish-orange : hsl(30, 25%, 89%); /* key background */
+    --grayish-orange : hsl(28, 16%, 65%);       /* key shadow */
 
     /* THEME 1 TEXT */
-    -very-dark-grayish-blue : hsl(221, 14%, 31%); 
-    -white: hsl(0, 0, 100%);
+    --very-dark-grayish-blue : hsl(221, 14%, 31%); 
+    --white: hsl(0, 0, 100%);
 
     /* THEME 2 BACKGROUNDS */
-    -light-gray : hsl(0, 0%, 90%);      /* main background */
-    -grayish-red : hsl(0, 5%, 81%);     /* toggle background, keypad background) */
-    -very-light-gray : hsl(0, 0%, 93%); /* screen background */
+    --light-gray : hsl(0, 0%, 90%);      /* main background */
+    --grayish-red : hsl(0, 5%, 81%);     /* toggle background, keypad background) */
+    --very-light-gray : hsl(0, 0%, 93%); /* screen background */
 
     /* THEME 2 KEYS */
-    -dark-moderate-cyan : hsl(185, 42%, 37%); /* key background */
-    -very-dark-cyan : hsl(185, 58%, 25%);     /* key shadow */
-    -orange : hsl(25, 98%, 40%);              /* key background, toggle */
-    -dark-orange : hsl(25, 99%, 27%);         /* key shadow  */
-    -light-grayish-yellow : hsl(45, 7%, 89%); /* key background */
-    -dark-grayish-orange : hsl(35, 11%, 61%); /* key shadow */
+    --dark-moderate-cyan : hsl(185, 42%, 37%); /* key background */
+    --very-dark-cyan : hsl(185, 58%, 25%);     /* key shadow */
+    --orange : hsl(25, 98%, 40%);              /* key background, toggle */
+    --dark-orange : hsl(25, 99%, 27%);         /* key shadow  */
+    --light-grayish-yellow : hsl(45, 7%, 89%); /* key background */
+    --dark-grayish-orange : hsl(35, 11%, 61%); /* key shadow */
 
     /* THEME 2 TEXT */
-    -very-dark-grayish-yelloww : hsl(60, 10%, 19%);
+    --very-dark-grayish-yelloww : hsl(60, 10%, 19%);
     /* WHITE */
 
     /* THEME 3 BACKGROUNDS */
-    -very-dark-violet : hsl(268, 75%, 9%);        /* main background */
-    -very-dark-violet-light : hsl(268, 71%, 12%); /* toggle background, keypad background, screen background */
+    --very-dark-violet : hsl(268, 75%, 9%);        /* main background */
+    --very-dark-violet-light : hsl(268, 71%, 12%); /* toggle background, keypad background, screen background */
 
     /* THEME 3 KEYS */
-    -dark-violet : hsl(281, 89%, 26%);      /* key background */
-    -vivid-magenta : hsl(285, 91%, 52%);    /* key shadow */
-    -pure-cyan : hsl(176, 100%, 44%);       /* key background, toggle */
-    -soft-cyan : hsl(177, 92%, 70%);        /* key shadow */
-    -very-dark-violet : hsl(268, 47%, 21%); /* key background */
-    -dark-magenta : hsl(290, 70%, 36%);     /* key shadow */
+    --dark-violet : hsl(281, 89%, 26%);      /* key background */
+    --vivid-magenta : hsl(285, 91%, 52%);    /* key shadow */
+    --pure-cyan : hsl(176, 100%, 44%);       /* key background, toggle */
+    --soft-cyan : hsl(177, 92%, 70%);        /* key shadow */
+    --very-dark-violet : hsl(268, 47%, 21%); /* key background */
+    --dark-magenta : hsl(290, 70%, 36%);     /* key shadow */
 
     /* THEME 3 TEXT */ 
-    -light-yellow : hsl(52, 100%, 62%);
-    -very-dark-blue : hsl(198, 20%, 13%);
-    -white : hsl(0, 0, 100%);
+    --light-yellow : hsl(52, 100%, 62%);
+    --very-dark-blue : hsl(198, 20%, 13%);
+    --white : hsl(0, 0, 100%);
 }
 
 * {
@@ -69,23 +69,76 @@ a {
 
 #container {
     display: flex;
-    width: 100%;
-    height: 80vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 250px auto;
 }
 
 .calc-theme {
     display: flex;
+    justify-content: space-between;
+    width: 420px;
+    color: white;
+}
+
+.change-theme {
+    font-size: 12px;
+}
+
+.result {
+    padding: 40px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    width: 420px;
+    background-color: var(--very-dark-desaturated-blue);
+    color: white;
+}
+
+.buttons-area {
+    background-color: var(--very-dark-desaturated-medium);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.buttons-area button {
+    background-color: var(--light-grayish-orange);
+    border: none;
+    color: var(--very-dark-grayish-blue);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.buttons-2 {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+}
+
+.reset-del-color {
+    background-color: var(--desaturated-dark-blue);
+}
+
+.buttons-area p {
+    margin-bottom: 10px;
 }
 
 .igual {
-    background: var();
+    background-color: var(--key-red);
 }
 
 footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
+    bottom: 0;
+    width: 100%;
     text-align: center;
+    color: white;
+}
+
+footer a {
+    color: yellow;
 }
