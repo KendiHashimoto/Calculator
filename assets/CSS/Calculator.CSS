@@ -14,7 +14,7 @@
 
     /* THEME 1 TEXT */
     --very-dark-grayish-blue : hsl(221, 14%, 31%); 
-    --white: hsl(0, 0, 100%);
+    /* white */
 
     /* THEME 2 BACKGROUNDS */
     --light-gray : hsl(0, 0%, 90%);      /* main background */
@@ -67,69 +67,100 @@ a {
     text-decoration: none;
 }
 
-#container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 250px auto;
+button {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: opacity, 0.3s, color, 0.3s;
 }
 
-.calc-theme {
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+#container {
+    margin: 3.5rem auto;
+    max-width: 450px;
+}
+
+.calc-theme-bar {
     display: flex;
     justify-content: space-between;
-    width: 420px;
+    align-items: flex-end;
     color: white;
+    margin-bottom: 1.4rem;
+}
+
+.calc-theme .text {
+    font-size: 3px;
+}
+
+.calc-theme .calc {
+    font-size: 25px;
 }
 
 .change-theme {
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .result {
+    display: flex;
+    justify-content: flex-end;
     padding: 40px;
     margin: 20px 0px;
-    border-radius: 10px;
+    border-radius: 8px;
     width: 420px;
     background-color: var(--very-dark-desaturated-blue);
     color: white;
 }
 
+.result > p {
+    font-size: 33px;
+}
+
 .buttons-area {
     background-color: var(--very-dark-desaturated-medium);
     padding: 20px;
-    border-radius: 10px;
+    width: 420px;
+    border-radius: 8px;
 }
 
 .buttons-area button {
     background-color: var(--light-grayish-orange);
-    border: none;
+    box-shadow: 0px 3px  var(--grayish-orange);
     color: var(--very-dark-grayish-blue);
-    padding: 15px 32px;
+    padding: 10px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    justify-content: space-around;
-    border-radius: 10px;
+    justify-content: space-between;
+    font-size: 25px;
 }
 
-.buttons-2 {
+.first-line .second-line .three-line .four-line {
+    margin-bottom: 22px;
+}
+
+.reset-igual {
     display: flex;
-    padding: 0px 20px;
+    padding: -3px 20px;
     justify-content: space-between;
+}
+
+.igual {
+    color: var(--key-red);
 }
 
 .reset-del-color {
     background-color: var(--desaturated-dark-blue);
-}
-
-.buttons-area p {
-    margin-bottom: 10px;
-}
-
-.igual {
-    background-color: var(--key-red);
 }
 
 footer {

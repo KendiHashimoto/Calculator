@@ -10,55 +10,80 @@
 </head>
 <body>
   <main id="container">
-    <div class="calc-theme">
-      <p>calc</p>
-      <p class="change-theme">THEME</p>
-    </div>
 
+    <!-- Área da troca de temas -->
+    <header>
+      <div class="calc-theme-bar">
+        <p class="calc">calc</p>
+          <div class="header-themes">
+            <p class="text">THEME</p>
+              <div class="themes-change-buttons">
+                <button id="btn-theme-1" class="header__themes___change____buttons_____btn text">1</button>
+                <button id="btn-theme-2" class="header__themes___change____buttons_____btn text">2</button>
+                <button id="btn-theme-3" class="header__themes___change____buttons_____btn text">3</button>
+              </div>
+
+            <div id="theme-bar" class="header__themes___change____bar">
+              <div id="theme-circle" class="header__themes___change____bar_____circle"></div>
+            </div>
+          </div>
+      </div>
+    </header>
+
+    <!-- Resultado das operações -->
     <div class="result">
       <p>Números</p>
     </div>
 
     <div class="buttons-area">
-        <p>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button class="reset-del-color">del</button>
-        </p>
-        <p>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
-          <button>+</button>
-        </p>
-        <p>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>-</button>
-        </p>
-        <p>
-          <button>.</button>
-          <button>0</button>
-          <button>/</button>
-          <button>x</button>
-        </p>
-       <p>
-        <div class="buttons-2">
-          <button class="reset-del-color">reset</button>
+
+      <div class="first-line">
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button class="reset-del-color">del</button>
+      </div>
+
+      <div class="second-line">
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>+</button>
+      </div>
+
+      <div class="three-line">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>-</button>
+      </div>
+
+      <div class="four-line">
+        <button>.</button>
+        <button>0</button>
+        <button>/</button>
+        <button>x</button>
+      </div>
+
+        <!-- Botões diferentes -->
+        <div class="reset-igual">
+          <button class="reset-del-color">RESET</button>
           <button><span class="igual">=</span></button>
         </div>
-      </p>
+
     </div>
   </main>
 
   <footer>
     <nav>
-      <P>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></P>
-      <P>Coded by <a href="https://github.com/Hashimoto1312" target="blank">Kendi Hashimoto</a></P>
+      <P>
+         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></P>
+          <P>Coded by <a href="https://github.com/Hashimoto1312" target="blank">Kendi Hashimoto</a>
+      </P>
     </nav>
   </footer>
+
   <script src="./assets/SCRIPT/Calculator.JS"></script>
+
 </body>
 </html>
