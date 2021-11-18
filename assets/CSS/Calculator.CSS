@@ -51,6 +51,7 @@
     --white : hsl(0, 0, 100%);
 }
 
+/* GENERAL CONFIGS */
 * {
     margin: 0;
     padding: 0;
@@ -59,23 +60,94 @@
 }
 
 body {
-    width: 100%;
     background: var(--very-dark-desaturated-light);
-    height: 90vh;
+}
+
+#container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 80vh;
 }
 
-a {
-    text-decoration: none;
+/* HEADER */
+#header {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* BUTTONS */
+.calc-text {
+    font-size: 30px;
+}
+
+.change-themes {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.theme-text {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.numbers-theme {
+    display: flex;
+    font-size: 12px;
+    letter-spacing: 13px;
+}
+
+/* SCREEN RESULT */
+.internal-screen-result {
+    background: var(--very-dark-desaturated-blue);
+    margin: 20px 0;
+    padding: 40px 110px;
+    border-radius: 10px;
+}
+
+/* BODY CALCULATOR */
+#buttons-area {
+    width: 410px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    background: var(--very-dark-desaturated-medium);
+    border-radius: 10px;
+}
+
+.area-1 {
+
+}
+
+.area-2 {
+
+}
+
+.area-3 {
+
+}
+
+.area-4 {
+
+}
+
+.reset-igual {
+
+}
+
+.reset-del-color {
+
+}
+
+.igual {
+
+}
+
 button {
     border-radius: 5px;
-    border: none;
     cursor: pointer;
     outline: none;
     transition: opacity, 0.3s, color, 0.3s;
@@ -91,47 +163,15 @@ button:active {
     top: 1px;
 }
 
-#container {
-    margin: 3.5rem auto;
-    max-width: 450px;
-}
-
-/* HEADER */
-.theme-numbers {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.theme-numbers p {
-    margin: 0 4px;
-}
-
-.theme-text p {
-    float: right;
-}
-
-/* SCREEN RESULT */
-.result {
-    margin: 100px 0px;
-    width: 450px;
-}
-
-#screen {
-    width: 100%;
-    width: 150px;
-}
-
-/* BODY CALCULATOR */
-
-
 /* FOOTER */
 footer {
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
     color: white;
 }
 
 footer a {
     color: yellow;
+    text-decoration: none;
 }

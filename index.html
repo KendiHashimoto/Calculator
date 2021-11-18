@@ -9,69 +9,77 @@
   <title>Frontend Mentor | Calculator app</title>
 </head>
 <body>
-  <div id="container">
+  <main id="container">
 
-  <!-- Cabeçalho -->
-    <div class="title">
-      <!-- Header -->
-      <h1>calc</h1>
-
-      <!-- Troca de temas -->
-      <div class="theme-numbers">
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
+    <!-- HEADER -->
+    <header id="header">
+      <div class="calc-text">
+        <p>calc</p>
       </div>
 
+      <!-- CHANGE THEMES -->
       <div class="theme-text">
         <p>THEME</p>
       </div>
-    </div>
+      <div class="change-themes">
+        <div class="change-bottons">
+          <button>change</button>
+        </div>
+        <div class="numbers-theme">
+          <P>123</P>
+        </div>
+      </div>
+    </header>
 
-  <!-- Resultado das operações -->
-    <div class="result">
-      <form name="calc">
-        <input type="text" name="calc" readonly id="screen">
+    <!-- SCREEN RESULT -->
+    <section>
+      <form>
+        <input class="internal-screen-result" id="screen" name="screen-name" type="text" readonly>
       </form>
-    </div>
+    </section>
 
-  <!-- Corpo da calculadora -->
-    <div class="buttons-area">
-      <div class="buttons">
+    <!-- CALCULATOR BODY -->
+    <section id="buttons-area">
+      <div class="area-1">
         <button>7</button>
         <button>8</button>
         <button>9</button>
         <button>DEL</button>
+      </div>
+      <div class="area-2">
         <button>4</button>
         <button>5</button>
         <button>6</button>
         <button>+</button>
+      </div>
+      <div class="area-3">
         <button>1</button>
         <button>2</button>
         <button>3</button>
         <button>-</button>
+      </div>
+      <div class="area-4">
         <button>.</button>
         <button>0</button>
         <button>/</button>
         <button>X</button>
-        <button>RESET</button>
-        <button>=</button>
       </div>
+    </div>
 
-        <!-- Botões diferentes -->
+      <!-- DIF BOTTONS -->
       <div class="reset-igual">
         <button class="reset-del-color">RESET</button>
         <button><span class="igual">=</span></button>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
-  <!-- Site do desafio e autor-->
+  <!-- AUTHOR AND WEBSITE -->
   <footer>
     <nav>
       <P>
-         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></P>
-          <P>Coded by <a href="https://github.com/Hashimoto1312" target="blank">Kendi Hashimoto</a>
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a></P>
+        <P>Coded by <a href="https://github.com/Hashimoto1312" target="blank">Kendi Hashimoto</a>
       </P>
     </nav>
   </footer>
