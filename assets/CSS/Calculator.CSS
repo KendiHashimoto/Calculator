@@ -55,18 +55,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 32px;
     font-family: 'Spartan', sans-serif;
 }
 
 body {
+    width: 100%;
     background: var(--very-dark-desaturated-light);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 a {
     text-decoration: none;
 }
 
+/* BUTTONS */
 button {
     border-radius: 5px;
     border: none;
@@ -90,79 +96,35 @@ button:active {
     max-width: 450px;
 }
 
-.calc-theme-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    color: white;
-    margin-bottom: 1.4rem;
-}
-
-.calc-theme .text {
-    font-size: 3px;
-}
-
-.calc-theme .calc {
-    font-size: 25px;
-}
-
-.change-theme {
-    font-size: 10px;
-}
-
-.result {
+/* HEADER */
+.theme-numbers {
     display: flex;
     justify-content: flex-end;
-    padding: 40px;
-    margin: 20px 0px;
-    border-radius: 8px;
-    width: 420px;
-    background-color: var(--very-dark-desaturated-blue);
-    color: white;
 }
 
-.result > p {
-    font-size: 33px;
+.theme-numbers p {
+    margin: 0 4px;
 }
 
-.buttons-area {
-    background-color: var(--very-dark-desaturated-medium);
-    padding: 20px;
-    width: 420px;
-    border-radius: 8px;
+.theme-text p {
+    float: right;
 }
 
-.buttons-area button {
-    background-color: var(--light-grayish-orange);
-    box-shadow: 0px 3px  var(--grayish-orange);
-    color: var(--very-dark-grayish-blue);
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    justify-content: space-between;
-    font-size: 25px;
+/* SCREEN RESULT */
+.result {
+    margin: 100px 0px;
+    width: 450px;
 }
 
-.first-line .second-line .three-line .four-line {
-    margin-bottom: 22px;
+#screen {
+    width: 100%;
+    width: 150px;
 }
 
-.reset-igual {
-    display: flex;
-    padding: -3px 20px;
-    justify-content: space-between;
-}
+/* BODY CALCULATOR */
 
-.igual {
-    color: var(--key-red);
-}
 
-.reset-del-color {
-    background-color: var(--desaturated-dark-blue);
-}
-
+/* FOOTER */
 footer {
     bottom: 0;
     width: 100%;

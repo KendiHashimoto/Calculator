@@ -9,71 +9,64 @@
   <title>Frontend Mentor | Calculator app</title>
 </head>
 <body>
-  <main id="container">
+  <div id="container">
 
-    <!-- Área da troca de temas -->
-    <header>
-      <div class="calc-theme-bar">
-        <p class="calc">calc</p>
-          <div class="header-themes">
-            <p class="text">THEME</p>
-              <div class="themes-change-buttons">
-                <button id="btn-theme-1" class="header__themes___change____buttons_____btn text">1</button>
-                <button id="btn-theme-2" class="header__themes___change____buttons_____btn text">2</button>
-                <button id="btn-theme-3" class="header__themes___change____buttons_____btn text">3</button>
-              </div>
+  <!-- Cabeçalho -->
+    <div class="title">
+      <!-- Header -->
+      <h1>calc</h1>
 
-            <div id="theme-bar" class="header__themes___change____bar">
-              <div id="theme-circle" class="header__themes___change____bar_____circle"></div>
-            </div>
-          </div>
+      <!-- Troca de temas -->
+      <div class="theme-numbers">
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
       </div>
-    </header>
 
-    <!-- Resultado das operações -->
-    <div class="result">
-      <p>Números</p>
+      <div class="theme-text">
+        <p>THEME</p>
+      </div>
     </div>
 
-    <div class="buttons-area">
+  <!-- Resultado das operações -->
+    <div class="result">
+      <form name="calc">
+        <input type="text" name="calc" readonly id="screen">
+      </form>
+    </div>
 
-      <div class="first-line">
+  <!-- Corpo da calculadora -->
+    <div class="buttons-area">
+      <div class="buttons">
         <button>7</button>
         <button>8</button>
         <button>9</button>
-        <button class="reset-del-color">del</button>
-      </div>
-
-      <div class="second-line">
+        <button>DEL</button>
         <button>4</button>
         <button>5</button>
         <button>6</button>
         <button>+</button>
-      </div>
-
-      <div class="three-line">
         <button>1</button>
         <button>2</button>
         <button>3</button>
         <button>-</button>
-      </div>
-
-      <div class="four-line">
         <button>.</button>
         <button>0</button>
         <button>/</button>
-        <button>x</button>
+        <button>X</button>
+        <button>RESET</button>
+        <button>=</button>
       </div>
 
         <!-- Botões diferentes -->
-        <div class="reset-igual">
-          <button class="reset-del-color">RESET</button>
-          <button><span class="igual">=</span></button>
-        </div>
-
+      <div class="reset-igual">
+        <button class="reset-del-color">RESET</button>
+        <button><span class="igual">=</span></button>
+      </div>
     </div>
-  </main>
+  </div>
 
+  <!-- Site do desafio e autor-->
   <footer>
     <nav>
       <P>
