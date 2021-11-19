@@ -85,7 +85,7 @@ body {
 
 .change-themes {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .theme-text {
@@ -125,16 +125,20 @@ body {
 }
 
 /* DIF BUTTONS */
-
 .reset-igual {
     width: 410px;
+    padding: 10px 35px;
+    margin: 20px 30px;
+    font-size: 32px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.reset-del-color {
-    font-size: 10px;
+.buttons-area .area-1 .reset-del-color {
+    font-size: 20px;
+    padding: 20px 30px;
     color: white;
+    border-radius: 11px;
     background: var(--desaturated-dark-blue);
 }
 
@@ -152,7 +156,7 @@ body {
     padding: 10px 35px;
     margin: 10px;
     border-radius: 7px;
-    border-style: none;
+    border: none;
     box-shadow:  10px 10px 10px var(--grayish-orang);
     cursor: pointer;
     outline: none;
