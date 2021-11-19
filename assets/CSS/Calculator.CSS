@@ -73,7 +73,8 @@ body {
 
 /* HEADER */
 #header {
-    width: 400px;
+    color: white;
+    width: 500px;
     display: flex;
     justify-content: space-between;
 }
@@ -102,15 +103,16 @@ body {
 .internal-screen-result {
     background: var(--very-dark-desaturated-blue);
     margin: 20px 0;
-    padding: 40px 110px;
+    padding: 50px 160px;
     border-radius: 10px;
+    border-style: none;
 }
 
 /* BODY CALCULATOR */
-#buttons-area {
-    width: 410px;
+.buttons-container {
+    width: 500px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
     padding: 20px 0;
@@ -118,36 +120,40 @@ body {
     border-radius: 10px;
 }
 
-.area-1 {
-
+.area-1 .area-2 .area-3 .area-4 {
+    display: flex;
 }
 
-.area-2 {
-
-}
-
-.area-3 {
-
-}
-
-.area-4 {
-
-}
+/* DIF BUTTONS */
 
 .reset-igual {
-
+    width: 410px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .reset-del-color {
-
+    font-size: 10px;
+    color: white;
+    background: var(--desaturated-dark-blue);
 }
 
 .igual {
-
+    width: 190px;
+    color: white;
+    background: var(--key-red);
 }
 
-button {
-    border-radius: 5px;
+/* GENERAL BUTTONS */
+.buttons-area button {
+    color: var(--desaturated-dark-blue-shadow);
+    background: var(--light-grayish-orange);
+    font-size: 32px;
+    padding: 10px 35px;
+    margin: 10px;
+    border-radius: 7px;
+    border-style: none;
+    box-shadow:  10px 10px 10px var(--grayish-orang);
     cursor: pointer;
     outline: none;
     transition: opacity, 0.3s, color, 0.3s;
