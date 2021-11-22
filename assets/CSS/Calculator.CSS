@@ -81,7 +81,7 @@ button {
 /* HEADER */
 #header {
     color: white;
-    width: 500px;
+    width: 530px;
     display: flex;
     justify-content: space-between;
 }
@@ -110,14 +110,14 @@ button {
 .internal-screen-result {
     background: var(--very-dark-desaturated-blue);
     margin: 20px 0;
-    padding: 50px 160px;
+    padding: 50px 177px;
     border-radius: 10px;
     border-style: none;
 }
 
 /* BODY CALCULATOR */
 .buttons-container {
-    width: 500px;
+    width: 533px;
     padding: 20px;
     background: var(--very-dark-desaturated-medium); 
     border-radius: 10px;
@@ -125,17 +125,51 @@ button {
 
 /* MATH BUTTONS */
 .buttons-area button {
+    font-size: 32px;
+    width: 100px;
+    height: 60px;
+    margin: 10px 10px 15px 10px;
+    border-radius: 10px;
     color: var(--desaturated-dark-blue-shadow);
     background: var(--light-grayish-orange);
-    box-shadow: 0 20px 0 var(--grayish-orange);
-    font-size: 32px;
-    width: 90px;
-    padding: 15px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow:  10px 10px 10px var(--grayish-orang);
+    box-shadow: 0 4px 0 var(--grayish-orange);
 }
 
+/* DIF BUTTONS */
+.buttons-area .del-button {
+    font-size: 20px;
+    position: relative;
+    bottom: 4px;
+    color: white;
+    background: var(--desaturated-dark-blue);
+    box-shadow:0px 5px 0px var(--desaturated-dark-blue-shadow);
+}
+
+.reset-igual-position {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.buttons-area .reset-button {
+    font-size: 20px;
+    width: 225px;
+    color: white;
+    border-radius: 10px;
+    background: var(--desaturated-dark-blue);
+    box-shadow:0px 4px 0px var(--desaturated-dark-blue-shadow);
+}
+
+.buttons-area .igual-button {
+    font-size: 20px;
+    width: 225px;
+    border-radius: 10px;
+    color: white;
+    background: var(--key-red);
+    box-shadow: 0 4px 0 var(--hadow-red);
+}
+
+/* GENERAL BUTTONS */
 button:hover {
     opacity: 0.9;
 }
@@ -144,40 +178,6 @@ button:active {
     position: relative;
     left: 1px;
     top: 1px;
-}
-
-/* DIF BUTTONS */
-.reset-igual-position {
-    display: flex;
-    justify-content: space-between;
-}
-
-.buttons-area .del-button {
-    font-size: 20px;
-    width: 90px;
-    padding: 20px 0px;
-    color: white;
-    border-radius: 10px;
-    background: var(--desaturated-dark-blue);
-    box-shadow:0px 5px 0px var(--desaturated-dark-blue-shadow);
-}
-
-.buttons-area .reset-button {
-    font-size: 20px;
-    padding: 10px 105px;
-    color: white;
-    border-radius: 10px;
-    background: var(--desaturated-dark-blue);
-    box-shadow:0px 5px 0px var(--desaturated-dark-blue-shadow);
-}
-
-.buttons-area .igual-button {
-    font-size: 20px;
-    padding: 17px 105px;
-    border-radius: 10px;
-    color: white;
-    background: var(--key-red);
-    box-shadow: 0 5px 0 var(--hadow-red);
 }
 
 /* FOOTER */
