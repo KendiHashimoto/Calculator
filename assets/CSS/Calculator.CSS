@@ -78,7 +78,7 @@ button {
     height: 80vh;
 }
 
-/* HEADER */
+/* LEFT HEADER */
 #header {
     color: white;
     width: 530px;
@@ -90,20 +90,29 @@ button {
     font-size: 30px;
 }
 
+/* RIGHT HEADER */
 .change-themes {
     display: flex;
     flex-direction: column;
 }
 
+.numbers-theme {
+    font-size: 12px;
+    letter-spacing: 13px;
+}
+
+.theme-text-changes {
+    display: flex;
+}
+
 .theme-text {
     font-size: 12px;
     letter-spacing: 1px;
+    margin-top: 10px;
 }
 
-.numbers-theme {
-    display: flex;
-    font-size: 12px;
-    letter-spacing: 13px;
+.changes-button {
+
 }
 
 /* SCREEN RESULT */
