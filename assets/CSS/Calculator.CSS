@@ -77,42 +77,104 @@ button {
     flex-direction: column;
     height: 80vh;
 }
-
-/* LEFT HEADER */
-#header {
-    color: white;
+/* HEADER */ 
+.header-container {
     width: 530px;
+}
+
+.header-position {
     display: flex;
     justify-content: space-between;
 }
 
 .calc-text {
-    font-size: 30px;
-}
-
-/* RIGHT HEADER */
-.change-themes {
-    display: flex;
-    flex-direction: column;
-}
-
-.numbers-theme {
-    font-size: 12px;
-    letter-spacing: 13px;
-}
-
-.theme-text-changes {
-    display: flex;
+	display: flex;
+	justify-content: space-between;
+    color: white;
 }
 
 .theme-text {
-    font-size: 12px;
-    letter-spacing: 1px;
-    margin-top: 10px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    position: relative;
+    top: 6px;
+    right: 10px;
 }
 
-.changes-button {
+.numbers-theme {
+	display: flex;
+    position: relative;
+    left: 7px;
+    bottom: 18px;
+    letter-spacing: 9px;
+    font-size: 10px
+}
 
+.calc-nums p {
+	margin: 0 5px;
+	color: #FFF;
+	cursor: pointer;
+}
+
+body.active1 .calc-nums h3 {
+	color: #111;
+}
+
+body.active2 .calc-nums h3 {
+	color: hsl(52, 100%, 62%);
+}
+
+.control-themes {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.box {
+	width: 60px;
+	height: 23px;
+	background-color: hsl(224, 36%, 15%);
+	border-radius: 30px;
+	margin-left: 4px;
+	position: relative;
+}
+
+body.active1 .control-themes .box { 
+	background-color: var(--twotkbg);
+}
+
+body.active2 .control-themes #circle {
+	background-color: hsl(176, 100%, 44%);
+}
+
+.control-themes #circle {
+	width: 15px;
+	height: 15px;
+	background-color: hsl(6, 63%, 50%);
+	position: relative;
+	top: -9px;
+	left: 5px;
+	z-index: 1;
+	border-radius: 30px;
+}
+body.active1 .control-themes #circle{
+	background-color: hsl(25, 98%, 40%);
+}
+.control-themes p{
+	color: #FFF;
+	cursor: pointer;
+	margin-right: 4px;
+}
+body.active1 .control-themes p{
+	color: #111;
+}
+body.active1 .right-header p{
+	color: #111;
+}
+body.active2 .control-themes p{
+	color: hsl(52, 100%, 62%);
+}
+body.active2 .right-header p{
+	color: hsl(52, 100%, 62%);
 }
 
 /* SCREEN RESULT */
