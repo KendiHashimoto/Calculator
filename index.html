@@ -36,9 +36,9 @@
       </header>
 
     <!-- SCREEN RESULT -->
-    <section>
-      <form>
-        <input class="internal-screen-result" type="text" name="calc-name" readonly id="screen-result">
+    <section class="screen">
+      <form class="calc">
+        <input type="text" class="internal-screen-result" readonly id="screenResult">
       </form>
     </section>
 
@@ -47,22 +47,22 @@
 
       <div class="buttons-area">
 
-          <button class="num">7</button>
-          <button class="num">8</button>
-          <button class="num">9</button>
-          <button class="del-button">DEL</button>
-          <button class="num">4</button>
-          <button class="num">5</button>
-          <button class="num">6</button>
-          <button>+</button>
-          <button class="num">1</button>
-          <button class="num">2</button>
-          <button class="num">3</button>
-          <button>-</button>
-          <button>.</button>
-          <button class="num">0</button>
-          <button>/</button>
-          <button>x</button>
+          <button class="num" onclick="getAndShowKeys('7')">7</button>
+          <button class="num" onclick="getAndShowKeys('8')">8</button>
+          <button class="num" onclick="getAndShowKeys('9')">9</button>
+          <button class="del-button"onclick="getAndShowKeys('del')">DEL</button>
+          <button class="num" onclick="getAndShowKeys('4')">4</button>
+          <button class="num" onclick="getAndShowKeys('5')">5</button>
+          <button class="num" onclick="getAndShowKeys('6')">6</button>
+          <button onclick="getAndShowKeys('+')">+</button>
+          <button class="num" onclick="getAndShowKeys('1')">1</button>
+          <button class="num" onclick="getAndShowKeys('2')">2</button>
+          <button class="num" onclick="getAndShowKeys('3')">3</button>
+          <button onclick="getAndShowKeys('-')">-</button>
+          <button onclick="getAndShowKeys('.')">.</button>
+          <button class="num" onclick="getAndShowKeys('0')">0</button>
+          <button onclick="getAndShowKeys('/')">/</button>
+          <button onclick="getAndShowKeys('x')">x</button>
 
           <!-- DIF BOTTONS -->
           <div class="reset-igual-position">
