@@ -184,11 +184,18 @@ body.active2 .right-header p {
 
 /* SCREEN RESULT */
 .internal-screen-result {
-    background: var(--very-dark-desaturated-blue);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 32px;
+    letter-spacing: 3px;
+    height: 100px;
+    width: 533px;
     margin: 20px 0;
-    padding: 50px 177px;
+    padding-right: 20px;
     border-radius: 10px;
-    border-style: none;
+    background: var(--very-dark-desaturated-blue);
 }
 
 /* BODY CALCULATOR */

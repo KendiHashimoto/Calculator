@@ -37,9 +37,7 @@
 
     <!-- SCREEN RESULT -->
     <section class="screen">
-      <form name="calc">
-        <input type="text" class="internal-screen-result" name="text" readonly id="screenResult">
-      </form>
+      <p class="internal-screen-result "id="screenResult"></p>
     </section>
 
     <!-- CALCULATOR BODY -->
@@ -50,7 +48,7 @@
           <button class="num" onclick="getAndShowKeys(this)" value="7">7</button>
           <button class="num" onclick="getAndShowKeys(this)" value="8">8</button>
           <button class="num" onclick="getAndShowKeys(this)" value="9">9</button>
-          <button class="del-button"onclick="getAndShowKeys(this)" value="DEL">DEL</button>
+          <button class="del-button" onclick="deletButtons(this)">DEL</button>
           <button class="num" onclick="getAndShowKeys(this)" value="4">4</button>
           <button class="num" onclick="getAndShowKeys(this)" value="5">5</button>
           <button class="num" onclick="getAndShowKeys(this)" value="6">6</button>
@@ -66,7 +64,7 @@
 
           <!-- DIF BOTTONS -->
           <div class="reset-igual-position">
-            <button class="reset-button" onclick=>RESET</button>
+            <button class="reset-button" onclick="clearInput(this)">RESET</button>
             <button class="igual-button" onclick=>=</button>
           </div>
 
