@@ -14,23 +14,12 @@ clearInput = (button) => {
 
 deletButtons = (button) => {
     const inputResult = document.querySelector('#screenResult').innerHTML;
-    document.querySelector('#screenResult').innerHTML = inputResult.substring(0, inputResult.length -1); // tentar fazer um if else aqui
+    document.querySelector('#screenResult').innerHTML = inputResult.substring(0, inputResult.length -1);
 };
 
 operationsResult = (button) => {
     const result = document.querySelector('#screenResult').innerHTML;
     document.querySelector('#screenResult').innerHTML = eval(result);
-    if (result === 0) {
-        document.querySelector('#screenResult').window.alert('Insira valores antes.')
-    } 
-};
-
-updateScreen = () => {
-    if (screen.value === "0") {
-        screen.innerText = "0"
-    } else {
-        screen.innerText = getAndShowKeys();
-    }
 };
 
 Themestoogle.addEventListener('click', ()=>{
