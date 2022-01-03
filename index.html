@@ -37,7 +37,7 @@
 
     <!-- SCREEN RESULT -->
     <section class="screen">
-      <p class="internal-screen-result "id="screenResult">0</p>
+      <input type="text" class="internal-screen-result " id="screenResult" readonly placeholder="0">
     </section>
 
     <!-- CALCULATOR BODY -->
@@ -45,28 +45,28 @@
 
       <div class="buttons-area">
 
-          <button class="num" onclick="getAndShowKeys(this)" value="7">7</button>
-          <button class="num" onclick="getAndShowKeys(this)" value="8">8</button>
-          <button class="num" onclick="getAndShowKeys(this)" value="9">9</button>
-          <button class="del-button" onclick="deletButtons(this)">DEL</button>
-          <button class="num" onclick="getAndShowKeys(this)" value="4">4</button>
-          <button class="num" onclick="getAndShowKeys(this)" value="5">5</button>
-          <button class="num" onclick="getAndShowKeys(this)" value="6">6</button>
-          <button onclick="getAndShowKeys(this)" value="+">+</button>
-          <button class="num" onclick="getAndShowKeys(this)" value="1">1</button>
-          <button class="num" onclick="getAndShowKeys(this)" value="2">2</button>
-          <button class="num" onclick="getAndShowKeys(this)" value="3">3</button>
-          <button onclick="getAndShowKeys(this)" value="-">-</button>
-          <button onclick="getAndShowKeys(this)" value=",">.</button>
-          <button class="num" onclick="getAndShowKeys(this)" value="0">0</button>
-          <button onclick="getAndShowKeys(this)" value="/">/</button>
-          <button onclick="getAndShowKeys(this)" value="*">x</button>
-
-          <!-- DIF BOTTONS -->
-          <div class="reset-igual-position">
-            <button class="reset-button" onclick="clearInput(this)">RESET</button>
-            <button class="igual-button" onclick="operationsResult(this)"value="=">=</button>
-          </div>
+        <button class="num" value="7">7</button>
+        <button class="num" value="8">8</button>
+        <button class="num" value="9">9</button>
+        <button class="del-button">DEL</button><br>
+        <button class="num" value="4">4</button>
+        <button class="num" value="5">5</button>
+        <button class="num" value="6">6</button>
+        <button class="opr" value="+">+</button><br>
+        <button class="num" value="1">1</button>
+        <button class="num" value="2">2</button>
+        <button class="num" value="3">3</button>
+        <button class="opr" value="-">-</button><br>
+        <button class="dot-button" value=".">.</button>
+        <button class="num" value="0">0</button>
+        <button class="opr" value="/">/</button>
+        <button class="opr" value="*">x</button>
+  
+        <!-- DIF BOTTONS -->
+        <div class="reset-igual-position">
+          <button class="reset-button">RESET</button>
+          <button class="equal-button">=</button>
+        </div>
 
       </div>
     </section>

@@ -183,7 +183,7 @@ body.active2 .right-header p {
 }
 
 /* SCREEN RESULT */
-.internal-screen-result {
+#screenResult {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -195,7 +195,13 @@ body.active2 .right-header p {
     margin: 20px 0;
     padding-right: 20px;
     border-radius: 10px;
+    text-align: right;
+    border: 0;
     background: var(--very-dark-desaturated-blue);
+}
+
+#screenResult::placeholder {
+    color: black;
 }
 
 /* BODY CALCULATOR */
@@ -243,7 +249,7 @@ body.active2 .right-header p {
     box-shadow:0px 4px 0px var(--desaturated-dark-blue-shadow);
 }
 
-.buttons-area .igual-button {
+.buttons-area .equal-button {
     font-size: 20px;
     width: 225px;
     border-radius: 10px;
