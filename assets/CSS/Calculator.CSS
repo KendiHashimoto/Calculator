@@ -30,7 +30,7 @@
     --dark-grayish-orange : hsl(35, 11%, 61%); /* key shadow */
 
     /* THEME 2 TEXT */
-    --very-dark-grayish-yelloww : hsl(60, 10%, 19%);
+    --very-dark-grayish-yellow : hsl(60, 10%, 19%);
     /* WHITE */
 
     /* THEME 3 BACKGROUNDS */
@@ -101,12 +101,13 @@ button {
     right: 10px;
 }
 
+/* HEADER THEMES */
 .control-themes {
 	display: flex;
 	justify-content: flex-end;
 }
 
-.control-themes p{
+.control-themes p {
 	color: white;
 	cursor: pointer;
 	margin-right: 4px;
@@ -144,42 +145,164 @@ button {
 .calc-nums p {
 	margin: 0 5px;
 	color: white;
-	cursor: pointer;
+    cursor: pointer;
 }
 
-body.active1 .calc-nums h3 {
-	color: #111;
+/* THEME 1 */
+body.active1 #screenResult::placeholder {
+    color: white;
 }
 
-body.active1 .control-themes .box { 
-	background-color: var(--twotkbg);
+/* THEME 2 */
+body.active2 {
+    background-color: var(--light-gray);
 }
 
-body.active1 .control-themes #circle {
-	background-color: hsl(25, 98%, 40%);
+body.active2 .buttons-container {
+    background-color: var(--grayish-red);
 }
 
-body.active1 .control-themes p {
-	color: #111;
-}
-body.active1 .right-header p {
-	color: #111;
+body.active2 .box-numbers-circle {
+    background-color: var(--grayish-red);
 }
 
-body.active2 .calc-nums h3 {
-	color: hsl(52, 100%, 62%);
+body.active2 #screenResult {
+    background-color: var(--very-light-gray);
 }
 
-body.active2 .control-themes #circle {
-	background-color: hsl(176, 100%, 44%);
+body.active2 .num {
+    background-color: var(--light-grayish-yellow);
+    box-shadow: 0px 4px 0px var(--dark-grayish-orange);
+    color: var(--very-dark-grayish-yelloww);
 }
 
-body.active2 .control-themes p {
-	color: hsl(52, 100%, 62%);
+body.active2 .opr {
+    background-color: var(--light-grayish-yellow);
+    box-shadow: 0px 4px 0px var(--dark-grayish-orange);
+    color: var(--very-dark-grayish-yelloww);
 }
 
-body.active2 .right-header p {
-	color: hsl(52, 100%, 62%);
+body.active2 .dot-button {
+    background-color: var(--light-grayish-yellow);
+    box-shadow: 0px 4px 0px var(--dark-grayish-orange);
+    color: var(--very-dark-grayish-yelloww);
+}
+
+body.active2 .reset-button {
+    background-color: var(--dark-moderate-cyan);
+    box-shadow: 0px 4px 0px var(--very-dark-cyan);
+}
+
+body.active2 .del-button {
+    background-color: var(--dark-moderate-cyan);
+    box-shadow: 0px 4px 0px var(--very-dark-cyan);
+}
+
+body.active2 .equal-button {
+    background-color: var(--orange);
+    box-shadow: 0px 4px 0px var(--dark-orange);
+}
+
+body.active2 .calc-text {
+    color: var(--very-dark-grayish-yellow);
+}
+
+body.active2 .theme-text {
+    color: var(--very-dark-grayish-yellow);
+}
+
+body.active2 #one {
+    color: var(--very-dark-grayish-yellow);
+}
+
+body.active2 #two {
+    color: var(--very-dark-grayish-yellow);
+}
+
+body.active2 #three {
+    color: var(--very-dark-grayish-yellow);
+}
+
+body.active2 #screenResult::placeholder {
+    color: var(--very-dark-grayish-yellow);
+}
+
+/* THEME 3 */
+body.active3 {
+    background-color: var(--very-dark-violet);
+}
+
+body.active3 .buttons-container {
+    background-color: var(--very-dark-violet-light);
+}
+
+body.active3 .box-numbers-circle {
+    background-color: var(--very-dark-violet-light);
+}
+
+body.active3 #circle {
+    background-color: var(--soft-cyan);
+}
+
+body.active3 #screenResult {
+    background-color: var(--very-dark-violet-light);
+}
+
+body.active3 .num {
+    background-color: var(--very-dark-violet);
+    box-shadow: 0px 4px 0px var(--dark-magenta);
+    color: var(--light-yellow);
+}
+
+body.active3 .opr {
+    background-color: var(--very-dark-violet);
+    box-shadow: 0px 4px 0px var(--dark-magenta);
+    color: var(--light-yellow);
+}
+
+body.active3 .dot-button {
+    background-color: var(--very-dark-violet);
+    box-shadow: 0px 4px 0px var(--dark-magenta);
+    color: var(--light-yellow);
+}
+
+body.active3 .reset-button {
+    background-color: var(--dark-violet);
+    box-shadow: 0px 4px 0px var(--vivid-magenta);
+}
+
+body.active3 .del-button {
+    background-color: var(--dark-violet);
+    box-shadow: 0px 4px 0px var(--vivid-magenta);
+}
+
+body.active3 .equal-button {
+    background-color: var(--pure-cyan);
+    box-shadow: 0px 4px 0px var( --soft-cyan);
+}
+
+body.active3 .calc-text {
+    color: var(--light-yellow);
+}
+
+body.active3 .theme-text {
+    color: var(--light-yellow);
+}
+
+body.active3 #one {
+    color: var(--light-yellow);
+}
+
+body.active3 #two {
+    color: var(--light-yellow);
+}
+
+body.active3 #three {
+    color: var(--light-yellow);
+}
+
+body.active3 #screenResult::placeholder {
+    color: var(--light-yellow);
 }
 
 /* SCREEN RESULT */
@@ -201,7 +324,7 @@ body.active2 .right-header p {
 }
 
 #screenResult::placeholder {
-    color: black;
+    color: white;
 }
 
 /* BODY CALCULATOR */

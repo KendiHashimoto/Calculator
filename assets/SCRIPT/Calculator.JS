@@ -4,13 +4,6 @@ const resetBtn = document.querySelector('.reset-button');
 const dotBtn = document.querySelector('.dot-button');
 const delBtn = document.querySelector('.del-button');
 const equalBtn = document.querySelector('.equal-button');
-
-// Theme changer constants
-const Themestoogle = document.querySelector('#theme-toogle');
-const body = document.querySelector('body');
-const ballToogle = document.querySelector('#circle');
-let theme = 1;
-
 const operathors = ["+", "-", "*", "/"];
 
 // Shows the numbers at screen
@@ -57,13 +50,25 @@ equalBtn.addEventListener("click", () => {
     display.value = eval(display.value);
 });
 
-Themestoogle.addEventListener('click', ()=>{
-    theme++;
-    switch(theme) {
-        case 2:
+// Theme changer 
+const one = document.querySelector('#one');
+const two = document.querySelector('#two');
+const  three = document.querySelector('#three');
+const body = document.querySelector('body');
 
-        case 3:
+one.addEventListener('click', () => {
+  body.classList.remove('active2');
+  body.classList.remove('active3');
+});
 
-        case 4:
-    }
+two.addEventListener('click', () => {
+  body.classList.add('active2');
+  body.classList.remove('active1');
+  body.classList.remove('active3');
+});
+
+three.addEventListener('click', () => {
+  body.classList.add('active3');
+  body.classList.remove('active1');
+  body.classList.remove('active2');
 });
