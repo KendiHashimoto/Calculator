@@ -54,21 +54,29 @@ equalBtn.addEventListener("click", () => {
 const one = document.querySelector('#one');
 const two = document.querySelector('#two');
 const  three = document.querySelector('#three');
+const ballToogle = document.querySelector('#circle')
 const body = document.querySelector('body');
 
 one.addEventListener('click', () => {
+  body.classList.add('active1');
+  display.classList.add('active1')
   body.classList.remove('active2');
   body.classList.remove('active3');
+  ballToogle.style.left = '10%';
 });
 
 two.addEventListener('click', () => {
   body.classList.add('active2');
+  display.classList.add('active2')
   body.classList.remove('active1');
   body.classList.remove('active3');
+  ballToogle.style.left = '37%';
 });
 
 three.addEventListener('click', () => {
   body.classList.add('active3');
+  display.classList.add('active3')
   body.classList.remove('active1');
   body.classList.remove('active2');
+  ballToogle.style.left = '65%';
 });

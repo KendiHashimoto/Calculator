@@ -131,6 +131,21 @@ button {
     font-size: 10px
 }
 
+#one:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease-out;
+}
+
+#two:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease-out;
+}
+
+#three:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease-out;
+}
+
 .control-themes #circle {
 	width: 15px;
 	height: 15px;
@@ -149,13 +164,27 @@ button {
 }
 
 /* THEME 1 */
-body.active1 #screenResult::placeholder {
+body.active1 {
+    transition: 500ms;
     color: white;
+}
+
+body.active1 #circle {
+    transition: 200ms;
 }
 
 /* THEME 2 */
 body.active2 {
     background-color: var(--light-gray);
+    transition: 500ms;
+}
+
+body.active1 #screenResult {
+    color: white;
+}
+
+body.active2 #circle {
+    transition: 200ms;
 }
 
 body.active2 .buttons-container {
@@ -230,6 +259,11 @@ body.active2 #screenResult::placeholder {
 /* THEME 3 */
 body.active3 {
     background-color: var(--very-dark-violet);
+    transition: 500ms;
+}
+
+body.active3 #circle {
+    transition: 200ms;
 }
 
 body.active3 .buttons-container {
@@ -279,6 +313,7 @@ body.active3 .del-button {
 body.active3 .equal-button {
     background-color: var(--pure-cyan);
     box-shadow: 0px 4px 0px var( --soft-cyan);
+    color: var(--very-dark-blue);
 }
 
 body.active3 .calc-text {
@@ -398,10 +433,26 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    color: white;
+    color: var(--light-grayish-orange);
 }
 
 footer a {
-    color: yellow;
+    color: var(--key-red);
     text-decoration: none;
+}
+
+body.active2 footer {
+    color: var( --very-dark-grayish-yellow);
+}
+
+body.active2 footer a {
+    color: var(--dark-moderate-cyan);
+}
+
+body.active3 footer {
+    color: var(--vivid-magenta);
+}
+
+body.active3 footer a {
+    color: var(--light-yellow);
 }
