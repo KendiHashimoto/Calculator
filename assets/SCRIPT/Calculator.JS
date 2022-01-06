@@ -24,18 +24,19 @@ for (let elm of document.querySelectorAll(".opr")) {
 
 // Event clicks for dot class
 dotBtn.addEventListener("click", (button) => {
-    if (display.value == "") {
-      display.value = "0.";
-      return;
-    };
+  if (display.value === "") {
+    display.value = "0.";
+    return;
+  };
 
-    if (operathors.includes(display.value[display.value.length - 1])) {
-      display.value += "0.";
-      return;
-    };
-    
-    if (display.value == ".") return;
-    display.value += button.target.value;
+  if (operathors.includes(display.value[display.value.length - 1])) {
+    display.value += "0.";
+    return;
+  };
+  
+  if (display.value === ".") return; 
+  display.value += button.target.value;
+
 });
 
 delBtn.addEventListener("click", () => {
@@ -59,10 +60,11 @@ const body = document.querySelector('body');
 
 one.addEventListener('click', () => {
   body.classList.add('active1');
-  display.classList.add('active1')
+  display.classList.add('active1');
   body.classList.remove('active2');
   body.classList.remove('active3');
   ballToogle.style.left = '10%';
+  display.classList.add('active1');
 });
 
 two.addEventListener('click', () => {
@@ -71,12 +73,14 @@ two.addEventListener('click', () => {
   body.classList.remove('active1');
   body.classList.remove('active3');
   ballToogle.style.left = '37%';
+  display.classList.add('active2');
 });
 
-three.addEventListener('click', () => {
+  three.addEventListener('click', () => {
   body.classList.add('active3');
   display.classList.add('active3')
   body.classList.remove('active1');
   body.classList.remove('active2');
   ballToogle.style.left = '65%';
-});
+  display.classList.add('active3');
+  });

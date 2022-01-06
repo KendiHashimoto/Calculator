@@ -66,8 +66,18 @@ body {
 button {
     cursor: pointer;
     outline: none;
-    transition: opacity, 0.3s, color, 0.3s;
     border: 0;
+}
+
+button:active {
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+button:hover {
+    opacity: 0.7;
+    transition: all 0.1s linear;
 }
 
 #container {
@@ -165,12 +175,16 @@ button {
 
 /* THEME 1 */
 body.active1 {
-    transition: 500ms;
     color: white;
+    transition: 500ms;
 }
 
 body.active1 #circle {
     transition: 200ms;
+}
+
+body.active1 #screenResult {
+    color: white;
 }
 
 /* THEME 2 */
@@ -179,8 +193,8 @@ body.active2 {
     transition: 500ms;
 }
 
-body.active1 #screenResult {
-    color: white;
+body.active2 #screenResult {
+    color: var(--very-dark-grayish-yellow);
 }
 
 body.active2 #circle {
@@ -260,6 +274,10 @@ body.active2 #screenResult::placeholder {
 body.active3 {
     background-color: var(--very-dark-violet);
     transition: 500ms;
+}
+
+body.active3 #screenResult {
+    color: var(--light-yellow);
 }
 
 body.active3 #circle {
@@ -356,6 +374,7 @@ body.active3 #screenResult::placeholder {
     text-align: right;
     border: 0;
     background: var(--very-dark-desaturated-blue);
+    color: white;
 }
 
 #screenResult::placeholder {
@@ -414,17 +433,6 @@ body.active3 #screenResult::placeholder {
     color: white;
     background: var(--key-red);
     box-shadow: 0 4px 0 var(--hadow-red);
-}
-
-/* GENERAL BUTTONS */
-button:hover {
-    opacity: 0.9;
-}
-
-button:active {
-    position: relative;
-    left: 1px;
-    top: 1px;
 }
 
 /* FOOTER */
