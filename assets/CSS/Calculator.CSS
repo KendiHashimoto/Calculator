@@ -364,7 +364,7 @@ body.active3 #screenResult::placeholder {
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
-    font-size: 32px;
+    font-size: 40px;
     letter-spacing: 3px;
     height: 100px;
     width: 533px;

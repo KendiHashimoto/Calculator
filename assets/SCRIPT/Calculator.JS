@@ -24,6 +24,11 @@ for (let elm of document.querySelectorAll(".opr")) {
 
 // Event clicks for dot class
 dotBtn.addEventListener("click", (button) => {
+  if (display.value === ".") {
+      display.value = ".";
+      return false;
+  };
+  
   if (display.value === "") {
     display.value = "0.";
     return;
@@ -48,7 +53,11 @@ resetBtn.addEventListener("click", () => {
 });
 
 equalBtn.addEventListener("click", () => {
+  if (display.value === "") {
+    display.value('');
+  } else {
     display.value = eval(display.value);
+  };
 });
 
 // Theme changer 
