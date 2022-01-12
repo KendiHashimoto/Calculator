@@ -87,6 +87,7 @@ button:hover {
     flex-direction: column;
     height: 80vh;
 }
+
 /* HEADER */ 
 .header-container {
     width: 530px;
@@ -171,6 +172,150 @@ button:hover {
 	margin: 0 5px;
 	color: white;
     cursor: pointer;
+}
+
+/* SCREEN RESULT */
+#screenResult {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    letter-spacing: 3px;
+    height: 100px;
+    width: 533px;
+    margin: 20px 0;
+    padding-right: 20px;
+    border-radius: 10px;
+    text-align: right;
+    border: 0;
+    background: var(--very-dark-desaturated-blue);
+    color: white;
+}
+
+#screenResult::placeholder {
+    color: white;
+}
+
+/* BODY CALCULATOR */
+.buttons-container {
+    width: 533px;
+    padding: 20px;
+    border-radius: 10px;
+    background: var(--very-dark-desaturated-medium); 
+}
+
+/* RESPONSIVE */ 
+@media only screen and (max-width: 550px) {
+    .header-container {
+        width: 400px;
+    }
+
+    #screenResult {
+        width: 400px;
+    }
+
+    .buttons-container {
+        width: 400px;
+    }
+
+    .buttons-area {
+        padding: 0px 15px 20px 23px;
+    }
+
+    .buttons-area .num {
+        width: 65px;
+        height: 70px;
+        margin: 10px 5px 10px 5px;
+    }
+
+    .buttons-area .opr {
+        width: 65px;
+        height: 70px;
+        margin: 10px 5px 10px 5px;
+    }
+
+    .buttons-area .dot-button {
+        width: 65px;
+        height: 70px;
+        margin: 10px 5px 10px 5px;
+    }
+
+    .buttons-area .del-button {
+        width: 65px;
+        height: 70px;
+        margin: 10px 5px 10px 5px;
+    }
+
+    .buttons-area .reset-igual-position {
+        height: 65px;
+        margin: 0px 5px 0px -3px;
+    }
+
+}
+
+/* MATH BUTTONS */
+.buttons-area button {
+    font-size: 32px;
+    width: 100px;
+    height: 65px;
+    margin: 10px 10px 15px 10px;
+    border-radius: 7px;
+    color: var(--desaturated-dark-blue-shadow);
+    background: var(--light-grayish-orange);
+    box-shadow: 0 5px 0 var(--grayish-orange);
+}
+
+.first-line {
+    margin: 0px 0px -5px 0px;
+}
+
+/* DIF BUTTONS */
+.buttons-area .del-button {
+    font-size: 20px;
+    position: relative;
+    bottom: 4px;
+    color: white;
+    background: var(--desaturated-dark-blue);
+    box-shadow:0px 5px 0px var(--desaturated-dark-blue-shadow);
+}
+
+.reset-igual-position {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.buttons-area .reset-button {
+    font-size: 20px;
+    width: 225px;
+    color: white;
+    border-radius: 7px;
+    background: var(--desaturated-dark-blue);
+    box-shadow:0px 4px 0px var(--desaturated-dark-blue-shadow);
+}
+
+.buttons-area .equal-button {
+    font-size: 20px;
+    width: 225px;
+    border-radius: 7px;
+    color: white;
+    background: var(--key-red);
+    box-shadow: 0 4px 0 var(--hadow-red);
+}
+
+/* FOOTER */
+footer {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--light-grayish-orange);
+}
+
+footer a {
+    color: var(--key-red);
+    text-decoration: none;
 }
 
 /* THEME 1 */
@@ -270,6 +415,14 @@ body.active2 #screenResult::placeholder {
     color: var(--very-dark-grayish-yellow);
 }
 
+body.active2 footer {
+    color: var( --very-dark-grayish-yellow);
+}
+
+body.active2 footer a {
+    color: var(--dark-moderate-cyan);
+}
+
 /* THEME 3 */
 body.active3 {
     background-color: var(--very-dark-violet);
@@ -356,105 +509,6 @@ body.active3 #three {
 
 body.active3 #screenResult::placeholder {
     color: var(--light-yellow);
-}
-
-/* SCREEN RESULT */
-#screenResult {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 40px;
-    letter-spacing: 3px;
-    height: 100px;
-    width: 533px;
-    margin: 20px 0;
-    padding-right: 20px;
-    border-radius: 10px;
-    text-align: right;
-    border: 0;
-    background: var(--very-dark-desaturated-blue);
-    color: white;
-}
-
-#screenResult::placeholder {
-    color: white;
-}
-
-/* BODY CALCULATOR */
-.buttons-container {
-    width: 533px;
-    padding: 20px;
-    background: var(--very-dark-desaturated-medium); 
-    border-radius: 10px;
-}
-
-/* MATH BUTTONS */
-.buttons-area button {
-    font-size: 32px;
-    width: 100px;
-    height: 60px;
-    margin: 10px 10px 15px 10px;
-    border-radius: 10px;
-    color: var(--desaturated-dark-blue-shadow);
-    background: var(--light-grayish-orange);
-    box-shadow: 0 4px 0 var(--grayish-orange);
-}
-
-/* DIF BUTTONS */
-.buttons-area .del-button {
-    font-size: 20px;
-    position: relative;
-    bottom: 4px;
-    color: white;
-    background: var(--desaturated-dark-blue);
-    box-shadow:0px 5px 0px var(--desaturated-dark-blue-shadow);
-}
-
-.reset-igual-position {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-}
-
-.buttons-area .reset-button {
-    font-size: 20px;
-    width: 225px;
-    color: white;
-    border-radius: 10px;
-    background: var(--desaturated-dark-blue);
-    box-shadow:0px 4px 0px var(--desaturated-dark-blue-shadow);
-}
-
-.buttons-area .equal-button {
-    font-size: 20px;
-    width: 225px;
-    border-radius: 10px;
-    color: white;
-    background: var(--key-red);
-    box-shadow: 0 4px 0 var(--hadow-red);
-}
-
-/* FOOTER */
-footer {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    color: var(--light-grayish-orange);
-}
-
-footer a {
-    color: var(--key-red);
-    text-decoration: none;
-}
-
-body.active2 footer {
-    color: var( --very-dark-grayish-yellow);
-}
-
-body.active2 footer a {
-    color: var(--dark-moderate-cyan);
 }
 
 body.active3 footer {

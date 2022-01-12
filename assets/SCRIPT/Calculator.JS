@@ -1,21 +1,23 @@
 // Calculator constants
 const display = document.querySelector('#screenResult');
 const resetBtn = document.querySelector('.reset-button');
+const numbers = document.querySelectorAll('.num');
+const calcs = document.querySelectorAll('.opr');
 const dotBtn = document.querySelector('.dot-button');
 const delBtn = document.querySelector('.del-button');
 const equalBtn = document.querySelector('.equal-button');
 const operathors = ["+", "-", "*", "/"];
 
 // Shows the numbers at screen
-for (let elm of document.querySelectorAll(".num")) {
-    elm.addEventListener("click", (button) => {
-      display.value += button.target.value;
-    });
+for (let nums of numbers) {
+    nums.addEventListener("click", (button) => {
+    display.value += button.target.value;
+  });
 };
 
 // Show the operathors at screen
-for (let elm of document.querySelectorAll(".opr")) {
-    elm.addEventListener("click", (button) => {
+for (let opr of calcs) {
+    opr.addEventListener("click", (button) => {
       if (display.value === "") return;
       if (operathors.includes(display.value[display.value.length - 1])) return;
       display.value += button.target.value;
@@ -24,11 +26,6 @@ for (let elm of document.querySelectorAll(".opr")) {
 
 // Event clicks for dot class
 dotBtn.addEventListener("click", (button) => {
-  if (display.value === ".") {
-      display.value = ".";
-      return false;
-  };
-  
   if (display.value === "") {
     display.value = "0.";
     return;
@@ -54,7 +51,7 @@ resetBtn.addEventListener("click", () => {
 
 equalBtn.addEventListener("click", () => {
   if (display.value === "") {
-    display.value('');
+    display.value = "";
   } else {
     display.value = eval(display.value);
   };
