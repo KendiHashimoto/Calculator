@@ -1,6 +1,6 @@
 <div style="display: inline_block" align="center">
 <h1>🌀 Calculadora</h1>
-<h2> Modelo de calculadora retirado do site <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontendmentor</a></h2>
+<h2> Calculator model taken from the site : <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontendmentor</a></h2>
 <h2> 👉 Site URL : <a href="https://wizardly-gates-ed8a6e.netlify.app" target="_blank">Calculator app main</a></h2>
 
   ## 1° THEME</h2>
