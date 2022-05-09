@@ -1,7 +1,7 @@
 <div style="display: inline_block" align="center">
 <h1>🌀 Calculator </h1>
 <h2> Calculator model taken from the site : <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontendmentor</a></h2>
-<h2> 👉 Site URL : <a href="https://wizardly-gates-ed8a6e.netlify.app" target="_blank">Calculator app main</a></h2>
+<h2> 👉 Site URL : <a href"https://exquisite-kleicha-c19cae.netlify.app" target="_blank">Calculator app main</a></h2>
 
   ## 1° THEME</h2>
   ![image](https://user-images.githubusercontent.com/71889483/149131845-a4027010-0148-4749-adf7-88dccc077f94.png)<br>
