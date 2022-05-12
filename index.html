@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/CSS/Calculator.CSS">
+  <link rel="stylesheet" href="./src/Calculator.CSS">
   <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Calculator app</title>
 </head>
@@ -46,25 +46,30 @@
     <section class="buttons-container">
 
       <div class="buttons-area">
-
-        <div class="first-line">
+        <div>
           <button class="num" value="7">7</button>
           <button class="num" value="8">8</button>
           <button class="num" value="9">9</button>
-          <button class="del-button">DEL</button><br>
+          <button class="del-button">DEL</button>
         </div>
-        <button class="num" value="4">4</button>
-        <button class="num" value="5">5</button>
-        <button class="num" value="6">6</button>
-        <button class="opr" value="+">+</button><br>
-        <button class="num" value="1">1</button>
-        <button class="num" value="2">2</button>
-        <button class="num" value="3">3</button>
-        <button class="opr" value="-">-</button><br>
-        <button class="dot-button" value=".">.</button>
-        <button class="num" value="0">0</button>
-        <button class="opr" value="/">/</button>
-        <button class="opr" value="*">x</button>
+        <div>
+          <button class="num" value="4">4</button>
+          <button class="num" value="5">5</button>
+          <button class="num" value="6">6</button>
+          <button class="opr" value="+">+</button>
+        </div>
+        <div>
+          <button class="num" value="1">1</button>
+          <button class="num" value="2">2</button>
+          <button class="num" value="3">3</button>
+          <button class="opr" value="-">-</button>
+        </div>
+        <div>
+          <button class="dot-button" value=".">.</button>
+          <button class="num" value="0">0</button>
+          <button class="opr" value="/">/</button>
+          <button class="opr" value="*">x</button>
+        </div>
   
         <!-- DIF BOTTONS -->
         <div class="reset-igual-position">
@@ -85,6 +90,6 @@
       </P>
     </nav>
   </footer>
-  <script src="./assets/SCRIPT/Calculator.JS"></script>
+  <script src="./src/Calculator.JS"></script>
 </body>
 </html>

@@ -1,12 +1,12 @@
 // Calculator constants
 const display = document.querySelector('#screenResult');
-const resetBtn = document.querySelector('.reset-button');
-const numbers = document.querySelectorAll('.num');
-const calcs = document.querySelectorAll('.opr');
-const dotBtn = document.querySelector('.dot-button');
-const delBtn = document.querySelector('.del-button');
-const equalBtn = document.querySelector('.equal-button');
-const operathors = ["+", "-", "*", "/"];
+      resetBtn = document.querySelector('.reset-button');
+      numbers = document.querySelectorAll('.num');
+      calcs = document.querySelectorAll('.opr');
+      dotBtn = document.querySelector('.dot-button');
+      delBtn = document.querySelector('.del-button');
+      equalBtn = document.querySelector('.equal-button');
+      operathors = ["+", "-", "*", "/"];
 
 // Shows the numbers at screen
 for (let nums of numbers) {
@@ -37,6 +37,7 @@ dotBtn.addEventListener("click", (button) => {
   };
   
   if (display.value === ".") return; 
+
   display.value += button.target.value;
 
 });

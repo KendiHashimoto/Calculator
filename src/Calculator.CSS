@@ -76,7 +76,7 @@ button:active {
 }
 
 button:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     transition: all 0.1s linear;
 }
 
@@ -85,7 +85,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80vh;
+    height: 94vh;
 }
 
 /* HEADER */ 
@@ -142,17 +142,7 @@ button:hover {
     font-size: 10px
 }
 
-#one:hover {
-    opacity: 0.5;
-    transition: all 0.5s ease-out;
-}
-
-#two:hover {
-    opacity: 0.5;
-    transition: all 0.5s ease-out;
-}
-
-#three:hover {
+#one:hover, #two:hover, #three:hover {
     opacity: 0.5;
     transition: all 0.5s ease-out;
 }
@@ -199,7 +189,7 @@ button:hover {
 
 /* BODY CALCULATOR */
 .buttons-container {
-    width: 533px;
+    width: 539px;
     padding: 20px;
     border-radius: 10px;
     background: var(--very-dark-desaturated-medium); 
@@ -211,7 +201,7 @@ button:hover {
     width: 100px;
     height: 65px;
     margin: 10px 10px 15px 10px;
-    border-radius: 7px;
+    border-radius: 5px;
     color: var(--desaturated-dark-blue-shadow);
     background: var(--light-grayish-orange);
     box-shadow: 0 5px 0 var(--grayish-orange);
@@ -241,7 +231,7 @@ button:hover {
     font-size: 20px;
     width: 225px;
     color: white;
-    border-radius: 7px;
+    border-radius: 5px;
     background: var(--desaturated-dark-blue);
     box-shadow:0px 4px 0px var(--desaturated-dark-blue-shadow);
 }
@@ -249,7 +239,7 @@ button:hover {
 .buttons-area .equal-button {
     font-size: 20px;
     width: 225px;
-    border-radius: 7px;
+    border-radius: 5px;
     color: white;
     background: var(--key-red);
     box-shadow: 0 4px 0 var(--hadow-red);
@@ -297,11 +287,7 @@ body.active2 #circle {
     transition: 200ms;
 }
 
-body.active2 .buttons-container {
-    background-color: var(--grayish-red);
-}
-
-body.active2 .box-numbers-circle {
+body.active2 .box-numbers-circle, body.active2 .buttons-container {
     background-color: var(--grayish-red);
 }
 
@@ -309,30 +295,13 @@ body.active2 #screenResult {
     background-color: var(--very-light-gray);
 }
 
-body.active2 .num {
+body.active2 .num, body.active2 .opr, body.active2 .dot-button {
     background-color: var(--light-grayish-yellow);
     box-shadow: 0px 4px 0px var(--dark-grayish-orange);
     color: var(--very-dark-grayish-yelloww);
 }
 
-body.active2 .opr {
-    background-color: var(--light-grayish-yellow);
-    box-shadow: 0px 4px 0px var(--dark-grayish-orange);
-    color: var(--very-dark-grayish-yelloww);
-}
-
-body.active2 .dot-button {
-    background-color: var(--light-grayish-yellow);
-    box-shadow: 0px 4px 0px var(--dark-grayish-orange);
-    color: var(--very-dark-grayish-yelloww);
-}
-
-body.active2 .reset-button {
-    background-color: var(--dark-moderate-cyan);
-    box-shadow: 0px 4px 0px var(--very-dark-cyan);
-}
-
-body.active2 .del-button {
+body.active2 .reset-button, body.active2 .del-button {
     background-color: var(--dark-moderate-cyan);
     box-shadow: 0px 4px 0px var(--very-dark-cyan);
 }
@@ -342,32 +311,10 @@ body.active2 .equal-button {
     box-shadow: 0px 4px 0px var(--dark-orange);
 }
 
-body.active2 .calc-text {
-    color: var(--very-dark-grayish-yellow);
-}
-
-body.active2 .theme-text {
-    color: var(--very-dark-grayish-yellow);
-}
-
-body.active2 #one {
-    color: var(--very-dark-grayish-yellow);
-}
-
-body.active2 #two {
-    color: var(--very-dark-grayish-yellow);
-}
-
-body.active2 #three {
-    color: var(--very-dark-grayish-yellow);
-}
-
-body.active2 #screenResult::placeholder {
-    color: var(--very-dark-grayish-yellow);
-}
-
+body.active2 .calc-text, body.active2 .theme-text, body.active2 #one,
+body.active2 #two, body.active2 #three, body.active2 #screenResult::placeholder,
 body.active2 footer {
-    color: var( --very-dark-grayish-yellow);
+    color: var(--very-dark-grayish-yellow);
 }
 
 body.active2 footer a {
@@ -388,11 +335,7 @@ body.active3 #circle {
     transition: 200ms;
 }
 
-body.active3 .buttons-container {
-    background-color: var(--very-dark-violet-light);
-}
-
-body.active3 .box-numbers-circle {
+body.active3 .buttons-container, body.active3 .box-numbers-circle, body.active3 #screenResult {
     background-color: var(--very-dark-violet-light);
 }
 
@@ -400,65 +343,26 @@ body.active3 #circle {
     background-color: var(--soft-cyan);
 }
 
-body.active3 #screenResult {
-    background-color: var(--very-dark-violet-light);
-}
-
-body.active3 .num {
+body.active3 .num, body.active3 .opr, body.active3 .dot-button {
     background-color: var(--very-dark-violet);
     box-shadow: 0px 4px 0px var(--dark-magenta);
     color: var(--light-yellow);
 }
 
-body.active3 .opr {
-    background-color: var(--very-dark-violet);
-    box-shadow: 0px 4px 0px var(--dark-magenta);
-    color: var(--light-yellow);
-}
-
-body.active3 .dot-button {
-    background-color: var(--very-dark-violet);
-    box-shadow: 0px 4px 0px var(--dark-magenta);
-    color: var(--light-yellow);
-}
-
-body.active3 .reset-button {
-    background-color: var(--dark-violet);
-    box-shadow: 0px 4px 0px var(--vivid-magenta);
-}
-
-body.active3 .del-button {
+body.active3 .reset-button, body.active3 .del-button {
     background-color: var(--dark-violet);
     box-shadow: 0px 4px 0px var(--vivid-magenta);
 }
 
 body.active3 .equal-button {
     background-color: var(--pure-cyan);
-    box-shadow: 0px 4px 0px var( --soft-cyan);
+    box-shadow: 0px 4px 0px var(--soft-cyan);
     color: var(--very-dark-blue);
 }
 
-body.active3 .calc-text {
-    color: var(--light-yellow);
-}
-
-body.active3 .theme-text {
-    color: var(--light-yellow);
-}
-
-body.active3 #one {
-    color: var(--light-yellow);
-}
-
-body.active3 #two {
-    color: var(--light-yellow);
-}
-
-body.active3 #three {
-    color: var(--light-yellow);
-}
-
-body.active3 #screenResult::placeholder {
+body.active3 .calc-text, body.active3 .theme-text, body.active3 #one, 
+body.active3 #two, body.active3 #three, body.active3 #screenResult::placeholder,
+body.active3 footer a {
     color: var(--light-yellow);
 }
 
@@ -466,55 +370,41 @@ body.active3 footer {
     color: var(--vivid-magenta);
 }
 
-body.active3 footer a {
-    color: var(--light-yellow);
-}
-
 /* RESPONSIVE */ 
 @media only screen and (max-width: 550px) {
     .header-container {
-        width: 400px;
+        width: 340px;
     }
 
     #screenResult {
-        width: 400px;
+        width: 340px;
     }
 
     .buttons-container {
-        width: 400px;
+        width: 340px;
     }
 
     .buttons-area {
-        padding: 0px 15px 20px 23px;
+        margin-bottom: 20px;
     }
 
-    .buttons-area .num {
-        width: 65px;
-        height: 70px;
-        margin: 10px 5px 10px 5px;
-    }
-
-    .buttons-area .opr {
-        width: 65px;
-        height: 70px;
-        margin: 10px 5px 10px 5px;
-    }
-
-    .buttons-area .dot-button {
-        width: 65px;
-        height: 70px;
-        margin: 10px 5px 10px 5px;
-    }
-
+    .buttons-area .num, .buttons-area .opr, .buttons-area .dot-button,
     .buttons-area .del-button {
-        width: 65px;
+        width: 60px;
         height: 70px;
         margin: 10px 5px 10px 5px;
     }
 
     .buttons-area .reset-igual-position {
         height: 65px;
-        margin: 0px 5px 0px -3px;
+    }
+
+    .buttons-area .reset-button {
+        margin: 10px 5px 0px 5px;
+    }
+
+    .buttons-area .equal-button {
+        margin: 10px 7px 0px 10px
     }
 
 }
