@@ -1,18 +1,61 @@
-<div style="display: inline_block" align="center">
-<h1>🌀 Calculator </h1>
-<h2> Calculator model taken from the site : <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontendmentor</a></h2>
-<h2> 👉 Site URL : https://exquisite-kleicha-c19cae.netlify.app
 
-  ## 1° THEME</h2>
-  ![image](https://user-images.githubusercontent.com/71889483/149131845-a4027010-0148-4749-adf7-88dccc077f94.png)<br>
-  ## 2° THEME
-  ![image](https://user-images.githubusercontent.com/71889483/149131896-5d19edb5-763c-4fb1-90bc-fb7a63887644.png)<br>
-  ## 3° THEME
-  ![image](https://user-images.githubusercontent.com/71889483/149131983-b02c05d0-a362-435f-a80c-d40e8cf9007f.png)
+# 📟 Calculadora
 
+<h3 align="center"> 🚀 Calculadora 📟 Concluído ✅ </h3>
 
-  <h1> 🛠 Made with : <br>
-  <img align="center" alt="Hashimoto-HTML" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-  <img align="center" alt="Hashimoto-CSS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
-  <img align="center" alt="Hashimoto-JS" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
-</div>
+---
+
+<p align="center">
+   <a href=#sobre>Sobre</a> •
+   <a href=#site>Site</a> •
+   <a href=#clone>Clone</a> •
+   <a href=#layouts>Layouts</a> •
+   <a href=#tecnologias>Tecnologias</a> • 
+   <a href=#licença>Licença</a> •
+   <a href=#autor>Autor</a> 
+</p>
+
+## 💻 Sobre
+
+➕ Uma calculadora responsiva feita com JS puro, com operações básicas e três temas.
+
+---
+
+## 🌐 Site
+📎 [Clique aqui](https://exquisite-kleicha-c19cae.netlify.app)
+
+---
+
+## 📥 Clone
+```bash
+git clone https://github.com/Hashimoto1312/Calculator.git
+```
+
+---
+
+## 🎨 Layouts
+![Layout!](assets/img/calculadora.gif "layout")
+
+---
+## 👾 Tecnologias
+<img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+<img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+<img align="center" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
+          
+             
+---
+## 👨‍💻 Autor
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/71889483?v=4" width="100px;" alt=""/>
+ <br/>🚀 Kendi Hashimoto
+
+[![Linktree Badge](https://img.shields.io/badge/linktree-1de9b6?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/Hashimoto01)
+[![Linkedin Badge](https://img.shields.io/badge/-KendiHashimoto-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/tgmarinho/)](https://www.linkedin.com/in/kendi-hashimoto-202359220/) 
+[![Gmail Badge](https://img.shields.io/badge/-kendcampos@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:tgmarinho@gmail.com)](https://mail.google.com/mail/u/0/#inbox)
+
+---
+
+## 📝 Licença
+Este projeto esta sobe a licença [MIT](./LICENSE).
