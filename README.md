@@ -22,7 +22,7 @@
 ---
 
 ## 🌐 Site
-📎 [Clique aqui](https://exquisite-kleicha-c19cae.netlify.app)
+📎 [Clique aqui](calculator-gsz6o7gaj-hashimoto1312.vercel.app)
 
 ---
 
