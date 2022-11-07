@@ -22,7 +22,7 @@
 ---
 
 ## 🌐 Site
-📎 [Clique aqui](calculator-gsz6o7gaj-hashimoto1312.vercel.app)
+📎 [Clique aqui](https://calculator-ten-virid.vercel.app/)
 
 ---
 
